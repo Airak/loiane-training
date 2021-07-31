@@ -1,6 +1,7 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
 
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { CursoNaoEncontradoComponent } from './curso-nao-encontrado.component';
+
 
 describe('CursoNaoEncontradoComponent', () => {
   let component: CursoNaoEncontradoComponent;

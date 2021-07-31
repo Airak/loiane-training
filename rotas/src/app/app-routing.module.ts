@@ -1,4 +1,4 @@
-import { CursosComponent } from './../../../servicos/src/app/cursos/cursos.component';
+import { CursosComponent } from './cursos/cursos.component';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { NgModule } from '@angular/core';

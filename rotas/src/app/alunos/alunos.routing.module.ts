@@ -1,3 +1,4 @@
+import { AlunoDetalheResolver } from './guards/aluno-detalhe.resolver';
 import { NgModule } from '@angular/core';
 import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
@@ -17,7 +18,11 @@ const cursosRoutes: Routes = [
         component: AlunoFormComponent,
         canDeactivate: [AlunosDeactivateGuard],
       },
-      { path: ':id', component: AlunoDetalheComponent },
+      {
+        path: ':id',
+        component: AlunoDetalheComponent,
+        resolve: { aluno: AlunoDetalheResolver },
+      },
       {
         path: ':id/editar',
         component: AlunoFormComponent,

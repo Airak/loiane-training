@@ -4,7 +4,7 @@
 <div class="collection">
   <a class="collection-item"
     *ngFor="let curso of cursos"
-    [routerLink]="['/curso', curso.id]" routerLinkActive="router-link-active" >
+    [routerLink]="['/cursos', curso.id]" routerLinkActive="router-link-active" >
     {{ curso.nome }}
   </a>
 </div>

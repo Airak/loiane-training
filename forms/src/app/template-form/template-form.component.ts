@@ -1,15 +1,17 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-template-form',
   templateUrl: './template-form.component.html',
-  styleUrls: ['./template-form.component.css']
+  styleUrls: ['./template-form.component.css'],
 })
 export class TemplateFormComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
+  onSubmit(formulario: NgForm) {
+    console.log(formulario);
   }
 
+  ngOnInit(): void {}
 }
